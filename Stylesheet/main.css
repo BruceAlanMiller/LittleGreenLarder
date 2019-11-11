@@ -1,0 +1,62 @@
+#logosmall {
+  width: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item {
+    padding-left: 30px;
+    font-size: 24px;
+  }
+}
+
+button {
+  color: #329e62;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #329e62;
+}
+
+/* test */
+
+#mainimg {
+   width: 100%;
+}
+
+hr {
+  background-color: #80cda1;
+  height: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: #329e62;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+#logo {
+  width: 80%;
+  float: right;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+#mainbodyhomepage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
