@@ -14,7 +14,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader" class="animate-out">
+    <img src="Images/logosmall.jpg" alt="Loading Screen">
+  </div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
 <!-- Navigation -->
   <nav class="navbar navbar-expand-md navbar-light">
       <img src="Images/logosmall.jpg" alt="Logo" id="logosmall">
@@ -94,9 +100,24 @@
 			</div>
 		</div>
 	</footer>
+</div>
 
   <!-- Boostrap -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
 </body>
