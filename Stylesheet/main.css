@@ -18,18 +18,22 @@ button {
 }
 
 /* test */
+#carouselExampleIndicators{
+  border-bottom: 10px solid #6d5959;
+}
 
 #mainimg {
    width: 100%;
 }
 
 hr {
-  background-color: #80cda1;
-  height: 5px;
+  background-color: #6d5959;
+  height: 1px;
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 25px;
   margin-bottom: 25px;
+  opacity: 50%;
 }
 
 footer {
@@ -59,4 +63,108 @@ footer {
 #mainbodyhomepage {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+/* Loading Screen */
+
+/* Center the loader */
+#loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -197px;
+  margin-left: -144px;
+}
+
+/* Add animation to logo */
+.animate-out {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 3s;
+  animation-name: animateout;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animateout {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animateout {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+.recipeContainer {
+  padding-top: 15px;
+}
+
+.recipeItem {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.recipeTitle {
+  margin-top: 5px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #80cda1;
+  }
+  .card {
+    width: 90%;
+    background-color: #80cda1;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btn-primary {
+  background-color: #329e62;
+  border-color: #329e62;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem #329e62;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  background-color: #329e62;
+  border-color: #80cda1;
+}
+
+.btn-primary:active {
+  background-color: #329e62;
+  border-color: #80cda1;
+}
+
+.btn-primary:hover {
+  background-color: #329e62;
+  border-color: #80cda1;
 }
