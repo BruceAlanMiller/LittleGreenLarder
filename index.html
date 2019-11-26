@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
 
   <!-- Css -->
   <link rel="stylesheet" href="Stylesheet/main.css">
@@ -240,7 +243,52 @@
 		<div class="container">
 			<div class="row">
         <div class="col-md-4">
-          <h3> title </h3>
+            <h3> Little Green Larder </h3>
+            <div id='map'></div>
+            <script>
+              mapboxgl.accessToken = 'pk.eyJ1IjoiZWlsaWRoc3RyYWNoYW4iLCJhIjoiY2szZzJybXZ2MGFhZTNscDc1bXloejdvaiJ9.tA4RZImuVZVJHDL3-DkArA';
+              var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v9',
+                center: [-2.992301, 56.455945],
+                zoom: 14
+              });
+
+
+              map.on('load', function() {
+                map.addLayer({
+                  "id": "points",
+                  "type": "symbol",
+                  "source": {
+                    "type": "geojson",
+                    "data": {
+                      "type": "FeatureCollection",
+                      "features": [{
+                          "type": "Feature",
+                          "geometry": {
+                            "type": "Point",
+                            "coordinates": [-2.992301, 56.455945]
+                          },
+                          "properties": {
+                            "title": "Little Green Larder",
+                            "icon": "grocery"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "layout": {
+                    "icon-image": "{icon}-15",
+                    "text-field": "{title}",
+                    "text-font": ["Roboto Regular"],
+                    "text-offset": [0.6, 0.1],
+                    "text-anchor": "left",
+                  }
+                });
+              });
+              map.addControl(new mapboxgl.NavigationControl());
+            </script>
+
         </div>
         <div class="col-md-4">
           <h3> title </h3>
