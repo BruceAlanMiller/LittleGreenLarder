@@ -115,3 +115,24 @@ footer {
   display: none;
   text-align: center;
 }
+.recipeContainer {
+  padding-top: 30px;
+}
+
+.recipeItem {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.recipeTitle {
+  background-color: #329e62;
+  border-color: #2c2c2c;
+  border-style: solid;
+  margin-top: 5px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #80cda1;
+  }
