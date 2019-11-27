@@ -239,11 +239,11 @@
 </div>
 
   <!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-        <div class="col-md-4">
-            <h3> Little Green Larder </h3>
+	  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3> The Little Green Larder </h3>
             <div id='map'></div>
             <script>
               mapboxgl.accessToken = 'pk.eyJ1IjoiZWlsaWRoc3RyYWNoYW4iLCJhIjoiY2szZzJybXZ2MGFhZTNscDc1bXloejdvaiJ9.tA4RZImuVZVJHDL3-DkArA';
@@ -264,17 +264,16 @@
                     "data": {
                       "type": "FeatureCollection",
                       "features": [{
-                          "type": "Feature",
-                          "geometry": {
-                            "type": "Point",
-                            "coordinates": [-2.992301, 56.455945]
-                          },
-                          "properties": {
-                            "title": "Little Green Larder",
-                            "icon": "grocery"
-                          }
+                        "type": "Feature",
+                        "geometry": {
+                          "type": "Point",
+                          "coordinates": [-2.992301, 56.455945]
+                        },
+                        "properties": {
+                          "title": "The Little Green Larder",
+                          "icon": "grocery"
                         }
-                      ]
+                      }]
                     }
                   },
                   "layout": {
@@ -289,25 +288,21 @@
               map.addControl(new mapboxgl.NavigationControl());
             </script>
 
-        </div>
-        <div class="col-md-4">
-          <h3> title </h3>
+          </div>
+          <div class="col-md-6">
+            <h3> About </h3>
+            <p id='blurb'>Located in Dundee The Little Green Larder offers something for everyone.
+              With zero waste philosophies, customers are invited to bring their own
+              containers to the shop, recycled and biodegradable packaging is also available.
+              With a wide selection of vegetarian and vegan foods, customers can shop
+              for locally sourced produce without having to worry about the effect on the environment.
+            </p>
+              <img src="images/logo.jpg" alt="logo" id="logo">
+	 </div>
         </div>
       </div>
-      <div class="row">
-				<div class="col-md-4">
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-        </div>
-        <div class="col-md-4">
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-				<div class="col-md-4">
-					<img src="images/logo.jpg" alt="logo" id="logo">
-				</div>
-			</div>
-		</div>
-	</footer>
-</div>
+    </footer>
+  </div>
 
   <!-- Boostrap -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

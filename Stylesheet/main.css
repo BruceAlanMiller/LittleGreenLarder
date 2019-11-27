@@ -51,7 +51,18 @@ footer {
 
 #logo {
   width: 80%;
-  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+p {
+  padding-top: 10px;
+  margin: auto;
+  text-align: left;
 }
 
 .fa {
