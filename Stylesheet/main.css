@@ -26,6 +26,27 @@ button {
    width: 100%;
 }
 
+li {
+  margin: 10px;
+}
+
+h3 {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+#instructions{
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+#ingredients{
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 hr {
   background-color: #6d5959;
   height: 1px;
