@@ -199,6 +199,7 @@ p {
   }
   #printSection, #printSection * {
     visibility:visible;
+    overflow: visible !important;
   }
   #printSection {
     position:absolute;
